@@ -1,0 +1,22 @@
+isset method is used to check whether value is set to a particular variable.
+or not.
+it return either true or false.
+
+syntax:
+isset($property)//takes one args 
+
+exmaple:
+$name='santosh';
+isset($name)//return true
+
+
+__isset() magic method called when we want to check whether private property/
+non existing properties is  set or not from outside class.
+
+__isset() takes one args
+syntax:
+public function __isset($property){
+    //code here
+}
+
+note :you will not see any response in browser when it returns 0
