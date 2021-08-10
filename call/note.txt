@@ -1,0 +1,10 @@
+'similar to get and set methods but it works for the private/non-existing  
+methods instead of the properties
+
+it is autimatically called  when you are trying to access private or non-existing
+methods of any classes
+
+syntax 
+public function __call($method,args){
+    echo 'some messages';
+}

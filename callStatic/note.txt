@@ -1,0 +1,8 @@
+it is similar to call method but it is used for the static methods of classes
+it is automatically called when we  access non existing static methods/private 
+static methods from outside classes
+
+
+syntax and working is similar to call methods
+
+it also takes two args $method and $args

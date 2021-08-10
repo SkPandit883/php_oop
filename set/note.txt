@@ -1,0 +1,12 @@
+similar to get method 
+it takes two params and also get triggered when we are set a value to non existing/private properties of the class that
+
+syntax 
+
+public function __set($property,$value){
+  echo "can not set value $value to non existing/private properties $$property "
+}
+
+
+property_exists(class, $property)
+check wheather $property existed in class or not

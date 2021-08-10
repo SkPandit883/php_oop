@@ -1,0 +1,11 @@
+it is magic method which is triggered when getting some conditon or event.
+it is called when we are trying to access private
+ or non existing properties of the classes.
+
+ it takes one params which refers to properties_name;
+
+ syntax
+
+ public function __get($property){
+    echo "trying to access non existing properties/private properties $property"
+ }
