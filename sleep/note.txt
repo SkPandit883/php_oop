@@ -1,0 +1,16 @@
+when we want to save object in file or session ,first of all we need 
+to convert it into array by using serialize function as :
+ serialize($obj)
+ this method convert all properties of the class into array
+
+ if we need to store only some properties of the class into session or file .
+ we need to serialize only that properties of the class into array.
+
+ so there is a concept of sleep magic method ,which is called automatically when
+ object is going to be serialized. 
+
+
+ syntax:
+ public function __sleep(){
+     return array('properties_name');
+ }
