@@ -7,5 +7,19 @@ echo "file dir: ".__DIR__."<br>";//return path of file
 function MyFunction(){
     echo "function name :".__FUNCTION__."<br>";
 }
-MyFunction()
+class MyClass{
+    public function magicConstant(){
+        echo __CLASS__;
+
+    }
+    public function methodShow(){
+        echo __METHOD__;
+    }
+}
+MyFunction();
+echo "<br>";
+$myclass=new MyClass();
+$myclass->magicConstant();
+echo "<br>";
+$myclass->methodShow();
 ?>
